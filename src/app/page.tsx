@@ -12,7 +12,7 @@ export default function BeerPongBattleRoyale() {
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container mx-auto max-w-6xl px-4 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold text-xl">
             <span className="text-red-600">BEER PONG</span>
             <span className="bg-red-600 text-white px-2 py-1 rounded-md">BATTLE ROYALE</span>
@@ -43,17 +43,17 @@ export default function BeerPongBattleRoyale() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative">
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          <div className="relative h-[70vh] bg-black">
+          <div className="absolute inset-0 bg-black/70 z-10" />
+          <div className="relative h-[80vh] bg-black">
             <Image
               src="/placeholder.svg?height=800&width=1600"
               alt="Beer Pong Battle Royale"
               fill
-              className="object-cover opacity-80"
+              className="object-cover opacity-70"
               priority
             />
-            <div className="container relative z-20 flex h-full flex-col items-center justify-center text-center text-white">
-              <div className="space-y-4 md:space-y-6">
+            <div className="container mx-auto max-w-6xl px-4 relative z-20 flex h-full flex-col items-center justify-center text-center text-white">
+              <div className="space-y-6">
                 <div className="inline-block rounded-md bg-red-600 px-3 py-1 text-sm font-semibold">
                   FINLAND'S BIGGEST BEER PONG TOURNAMENT
                 </div>
@@ -64,29 +64,29 @@ export default function BeerPongBattleRoyale() {
                 <p className="mx-auto max-w-[700px] text-lg md:text-xl">
                   128 teams. One champion. Massive cash prizes.
                 </p>
-                <div className="flex flex-wrap justify-center gap-4 text-sm">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
+                <div className="flex flex-wrap justify-center gap-6 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-5 w-5" />
                     <span>Coming Soon</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <MapPin className="h-4 w-4" />
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5" />
                     <span>Helsinki, Finland</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Users className="h-4 w-4" />
+                  <div className="flex items-center gap-2">
+                    <Users className="h-5 w-5" />
                     <span>128 Teams</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Trophy className="h-4 w-4" />
+                  <div className="flex items-center gap-2">
+                    <Trophy className="h-5 w-5" />
                     <span>Cash Prizes</span>
                   </div>
                 </div>
-                <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6">
                   <Button asChild size="lg" className="bg-red-600 hover:bg-red-700">
                     <Link href="#registration">Register Your Team</Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                  <Button asChild size="lg" variant="outline" className="border-white text-white bg-transparent">
                     <Link href="#tournament">Tournament Details</Link>
                   </Button>
                 </div>
@@ -96,50 +96,50 @@ export default function BeerPongBattleRoyale() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 md:py-24">
-          <div className="container">
+        <section id="about" className="py-20 md:py-28">
+          <div className="container mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-[800px] text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
                 Finland's Ultimate Beer Pong Experience
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-6 text-lg text-muted-foreground">
                 Organized by Aalto Beer Pong and Unilife, the Beer Pong Battle Royale brings together the best beer pong
                 players from across Finland for an epic tournament of skill, strategy, and fun.
               </p>
             </div>
 
             <div className="mt-16 grid gap-8 md:grid-cols-3">
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
-                    <Trophy className="h-6 w-6 text-red-600" />
+              <Card className="transform transition-transform hover:scale-105">
+                <CardContent className="pt-8 pb-6 px-6">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-red-100">
+                    <Trophy className="h-7 w-7 text-red-600" />
                   </div>
                   <h3 className="text-xl font-bold">Epic Competition</h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-3 text-muted-foreground">
                     128 teams will battle through multiple rounds in a tournament designed to crown the ultimate beer
                     pong champions.
                   </p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
-                    <Users className="h-6 w-6 text-red-600" />
+              <Card className="transform transition-transform hover:scale-105">
+                <CardContent className="pt-8 pb-6 px-6">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-red-100">
+                    <Users className="h-7 w-7 text-red-600" />
                   </div>
                   <h3 className="text-xl font-bold">Community Event</h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-3 text-muted-foreground">
                     More than just a tournament, it's a celebration of student culture and community with music, food,
                     and entertainment.
                   </p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
-                    <Clock className="h-6 w-6 text-red-600" />
+              <Card className="transform transition-transform hover:scale-105">
+                <CardContent className="pt-8 pb-6 px-6">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-red-100">
+                    <Clock className="h-7 w-7 text-red-600" />
                   </div>
                   <h3 className="text-xl font-bold">Unforgettable Experience</h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-3 text-muted-foreground">
                     A full day of excitement, competition, and memories that will last long after the final cup is sunk.
                   </p>
                 </CardContent>
@@ -148,88 +148,170 @@ export default function BeerPongBattleRoyale() {
           </div>
         </section>
 
+        {/* Prizes Section */}
+        <section id="prizes" className="py-20 md:py-28">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="mx-auto max-w-[800px] text-center">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Massive Prize Pool</h2>
+              <p className="mt-6 text-lg text-muted-foreground">Largest prize pool in the history of finnish Beer Pong!</p>
+            </div>
+
+            <div className="mt-16 grid gap-8 md:grid-cols-2">
+              <Card className="border-2 border-yellow-500 bg-gradient-to-b from-yellow-50 to-white transform transition-transform hover:scale-105 shadow-lg">
+                <CardContent className="pt-8 pb-6 px-6 text-center">
+                  <h3 className="text-2xl font-bold">1st Place</h3>
+                  <div className="my-6 text-5xl font-extrabold text-yellow-600">€500</div>
+                  <p className="text-muted-foreground">
+                    Plus championship trophy and title of Finland's Beer Pong Champions
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-slate-400 bg-gradient-to-b from-slate-50 to-white transform transition-transform hover:scale-105 shadow-md">
+                <CardContent className="pt-8 pb-6 px-6 text-center">
+                  <h3 className="text-2xl font-bold">2nd Place</h3>
+                  <div className="my-6 text-5xl font-extrabold text-slate-600">€200</div>
+                  <p className="text-muted-foreground">Plus sponsor gift packages</p>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-amber-700 bg-gradient-to-b from-amber-50 to-white transform transition-transform hover:scale-105 shadow-md">
+                <CardContent className="pt-8 pb-6 px-6 text-center">
+                  <h3 className="text-2xl font-bold">3rd Place</h3>
+                  <div className="my-6 text-5xl font-extrabold text-amber-700">€100</div>
+                  <p className="text-muted-foreground">Plus sponsor gift packages</p>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-amber-700 bg-gradient-to-b from-amber-50 to-white transform transition-transform hover:scale-105 shadow-md">
+                <CardContent className="pt-8 pb-6 px-6 text-center">
+                  <h3 className="text-2xl font-bold">4th-8th Place</h3>
+                  <div className="my-6 text-5xl font-extrabold text-amber-700">€50</div>
+                </CardContent>
+              </Card>
+            </div>
+
+            
+          </div>
+        </section>
+
         {/* Tournament Section */}
-        <section id="tournament" className="bg-slate-50 py-16 md:py-24">
-          <div className="container">
+        <section id="tournament" className="bg-slate-50 py-20 md:py-28">
+          <div className="container mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-[800px] text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Tournament Structure</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-6 text-lg text-muted-foreground">
                 A meticulously designed bracket system ensures fair play and maximum excitement.
               </p>
             </div>
 
-            <div className="mt-12">
+            <div className="mt-16">
               <Tabs defaultValue="format" className="mx-auto max-w-[800px]">
-                <TabsList className="grid w-full grid-cols-3">
+                <TabsList className="grid w-full grid-cols-3 mb-6">
                   <TabsTrigger value="format">Format</TabsTrigger>
                   <TabsTrigger value="rules">Rules</TabsTrigger>
                   <TabsTrigger value="schedule">Schedule</TabsTrigger>
                 </TabsList>
                 <TabsContent value="format" className="mt-6 space-y-4">
-                  <div className="rounded-lg border p-6">
-                    <h3 className="text-xl font-bold">Battle Royale Format</h3>
-                    <ul className="mt-4 space-y-3">
-                      <li className="flex items-start gap-2">
+                  <div className="rounded-lg border p-8 shadow-sm">
+                    <h3 className="text-2xl font-bold">Swiss Tournament Format</h3>
+                    <div className="mt-6 bg-red-50 p-4 rounded-md text-red-800 font-medium mb-8">
+                      Guaranteed minimum of 6 games for every team!
+                    </div>
+                    <ul className="mt-6 space-y-4">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>128 teams in a double-elimination bracket</span>
+                        <span>Swiss-system format with 6 preliminary rounds for all teams</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>Group stage followed by knockout rounds</span>
+                        <span>Top 32 teams advance to single-elimination playoff brackets</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
                         <span>Teams of 2 players each</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>Seeding based on previous tournaments and qualifiers</span>
+                        <span>All games are best-of-1, with championship final being best-of-3</span>
                       </li>
                     </ul>
+                    
+                    <div className="mt-8 pt-6 border-t border-slate-200">
+                      <h4 className="text-xl font-semibold mb-4">How Swiss Format Works</h4>
+                      <p className="text-muted-foreground mb-4">In the Swiss system, teams are paired in each round based on their current record:</p>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <div className="mt-1 h-5 w-5 flex-shrink-0 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xs">1</div>
+                          <span>Round 1: Random pairings</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="mt-1 h-5 w-5 flex-shrink-0 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xs">2</div>
+                          <span>Subsequent rounds: Teams with similar records play each other</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="mt-1 h-5 w-5 flex-shrink-0 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xs">3</div>
+                          <span>No team plays the same opponent twice</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="mt-1 h-5 w-5 flex-shrink-0 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xs">4</div>
+                          <span>After 6 rounds, teams are ranked by their win-loss record</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </TabsContent>
                 <TabsContent value="rules" className="mt-6 space-y-4">
-                  <div className="rounded-lg border p-6">
-                    <h3 className="text-xl font-bold">Official Rules</h3>
-                    <ul className="mt-4 space-y-3">
-                      <li className="flex items-start gap-2">
+                  <div className="rounded-lg border p-8 shadow-sm">
+                    <h3 className="text-2xl font-bold">Official Rules</h3>
+                    <ul className="mt-6 space-y-4">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
                         <span>Standard 10-cup triangle formation</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>Re-racking allowed twice per game</span>
+                        <span>Re-racking into standard triangles is done automatically when 6 or 3 cups are left. Last cup is centered to the back row.</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>Bounce shots count as two cups</span>
+                        <span>Bounce shots count as two cups and can be blocked.</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>Redemption round when all cups are eliminated</span>
+                        <span>Redemption round when all cups are eliminated.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
+                        <span>Game length: 20 minutes maximum for Swiss rounds</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
+                        <span>Tiebreakers determined by cup differential and swiss-format magic</span>
                       </li>
                     </ul>
                   </div>
                 </TabsContent>
                 <TabsContent value="schedule" className="mt-6 space-y-4">
-                  <div className="rounded-lg border p-6">
-                    <h3 className="text-xl font-bold">Event Schedule</h3>
-                    <ul className="mt-4 space-y-3">
-                      <li className="flex items-start gap-2">
+                  <div className="rounded-lg border p-8 shadow-sm">
+                    <h3 className="text-2xl font-bold">Event Schedule</h3>
+                    <ul className="mt-6 space-y-4">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>9:00 AM - Registration and check-in</span>
+                        <span>12:00 - Registration and check-in</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>10:00 AM - Group stages begin</span>
+                        <span>13:00 - Swiss rounds begin (6 rounds, approximately 40 minutes each)</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>3:00 PM - Knockout rounds</span>
+                        <span>17:15 - Top 32 teams announced</span>
                       </li>
-                      <li className="flex items-start gap-2">
+                      <li className="flex items-start gap-3">
                         <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                        <span>8:00 PM - Finals and award ceremony</span>
+                        <span>18:00 - Single-elimination bracket begins</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
+                        <span>21:00 - Championship finals (best-of-3) and award ceremony</span>
                       </li>
                     </ul>
                   </div>
@@ -239,110 +321,63 @@ export default function BeerPongBattleRoyale() {
           </div>
         </section>
 
-        {/* Prizes Section */}
-        <section id="prizes" className="py-16 md:py-24">
-          <div className="container">
-            <div className="mx-auto max-w-[800px] text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Massive Prize Pool</h2>
-              <p className="mt-4 text-lg text-muted-foreground">Compete for glory and substantial cash prizes.</p>
-            </div>
-
-            <div className="mt-12 grid gap-8 md:grid-cols-3">
-              <Card className="border-2 border-yellow-500 bg-gradient-to-b from-yellow-50 to-white">
-                <CardContent className="pt-6 text-center">
-                  <h3 className="text-2xl font-bold">1st Place</h3>
-                  <div className="my-4 text-4xl font-extrabold text-yellow-600">€1,000</div>
-                  <p className="text-muted-foreground">
-                    Plus championship trophy and title of Finland's Beer Pong Champions
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="border-2 border-slate-400 bg-gradient-to-b from-slate-50 to-white">
-                <CardContent className="pt-6 text-center">
-                  <h3 className="text-2xl font-bold">2nd Place</h3>
-                  <div className="my-4 text-4xl font-extrabold text-slate-600">€500</div>
-                  <p className="text-muted-foreground">Plus runner-up medals and exclusive merchandise</p>
-                </CardContent>
-              </Card>
-              <Card className="border-2 border-amber-700 bg-gradient-to-b from-amber-50 to-white">
-                <CardContent className="pt-6 text-center">
-                  <h3 className="text-2xl font-bold">3rd Place</h3>
-                  <div className="my-4 text-4xl font-extrabold text-amber-700">€250</div>
-                  <p className="text-muted-foreground">Plus bronze medals and sponsor gift packages</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mt-12 rounded-lg border bg-slate-50 p-6 text-center">
-              <h3 className="text-xl font-bold">Additional Prizes</h3>
-              <p className="mt-2 text-muted-foreground">
-                Special awards for Best Costume, Most Spirited Team, Best Technique, and more!
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Registration Section */}
-        <section id="registration" className="bg-red-600 py-16 md:py-24 text-white">
-          <div className="container">
+        <section id="registration" className="bg-red-600 py-20 md:py-28 text-white">
+          <div className="container mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-[800px] text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Register Your Team</h2>
-              <p className="mt-4 text-lg text-red-100">
+              <p className="mt-6 text-lg text-red-100">
                 Secure your spot in Finland's biggest beer pong tournament before all slots are filled!
               </p>
             </div>
 
-            <div className="mt-12 grid gap-8 md:grid-cols-2">
-              <Card className="bg-white">
-                <CardContent className="pt-6">
+            <div className="mt-16 grid gap-8 md:grid-cols-2">
+              <Card className="bg-white shadow-lg">
+                <CardContent className="pt-8 pb-6 px-6">
                   <h3 className="text-2xl font-bold">Registration Details</h3>
-                  <ul className="mt-4 space-y-3">
-                    <li className="flex items-start gap-2">
+                  <ul className="mt-6 space-y-4">
+                    <li className="flex items-start gap-3">
                       <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                      <span>€50 per team (2 players)</span>
+                      <span>€20 per team (2 players)</span>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
                       <span>Limited to 128 teams - first come, first served</span>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                      <span>Registration includes tournament entry, official t-shirts, and welcome package</span>
+                      <span>Registration includes tournament entry and a welcome package</span>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
                       <span>Registration deadline: One week before the event</span>
                     </li>
                   </ul>
-                  <Button className="mt-6 w-full bg-red-600 hover:bg-red-700">Register Now</Button>
+                  <Button className="mt-8 w-full bg-red-600 hover:bg-red-700 text-lg py-6">Register Now</Button>
                 </CardContent>
               </Card>
-              <Card className="bg-white">
-                <CardContent className="pt-6">
+              <Card className="bg-white shadow-lg">
+                <CardContent className="pt-8 pb-6 px-6">
                   <h3 className="text-2xl font-bold">What's Included</h3>
-                  <ul className="mt-4 space-y-3">
-                    <li className="flex items-start gap-2">
+                  <ul className="mt-6 space-y-4">
+                    <li className="flex items-start gap-3">
                       <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
                       <span>Full day tournament participation</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                      <span>Official Beer Pong Battle Royale t-shirts for both team members</span>
-                    </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
                       <span>Welcome package with sponsor gifts and merchandise</span>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-red-600" />
-                      <span>Access to after-party with special drink discounts</span>
+                      <span>Access to after-party with special drink discounts ??</span>
                     </li>
                   </ul>
-                  <div className="mt-6 rounded-md bg-red-50 p-4 text-red-800">
-                    <p className="text-sm font-medium">
+                  {/* <div className="mt-8 rounded-md bg-red-50 p-6 text-red-800">
+                    <p className="text-base font-medium">
                       Only a few spots remaining! Register today to secure your place.
                     </p>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             </div>
@@ -350,43 +385,41 @@ export default function BeerPongBattleRoyale() {
         </section>
 
         {/* Organizers Section */}
-        <section className="py-16 md:py-24">
-          <div className="container">
+        <section className="py-20 md:py-28">
+          <div className="container mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-[800px] text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Organized By</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Finland's premier beer pong organizations have joined forces to create the ultimate tournament.
-              </p>
+
             </div>
 
-            <div className="mt-12 grid gap-8 md:grid-cols-2">
+            <div className="mt-16 grid gap-12 md:grid-cols-2">
               <div className="flex flex-col items-center text-center">
-                <div className="h-32 w-32 overflow-hidden rounded-full bg-slate-100">
+                <div className="h-40 w-40 overflow-hidden rounded-full bg-slate-100 shadow-md">
                   <Image
-                    src="/placeholder.svg?height=128&width=128"
+                    src="/placeholder.svg?height=160&width=160"
                     alt="Aalto Beer Pong"
-                    width={128}
-                    height={128}
+                    width={160}
+                    height={160}
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold">Aalto Beer Pong</h3>
-                <p className="mt-2 max-w-md text-muted-foreground">
-                  The original beer pong organization from Aalto University, organizing tournaments since 2015.
+                <h3 className="mt-6 text-2xl font-bold">Aalto Beer Pong</h3>
+                <p className="mt-4 max-w-md text-lg text-muted-foreground">
+                  The original beer pong organization from Aalto University, organizing tournaments since 2011.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <div className="h-32 w-32 overflow-hidden rounded-full bg-slate-100">
+                <div className="h-40 w-40 overflow-hidden rounded-full bg-slate-100 shadow-md">
                   <Image
-                    src="/placeholder.svg?height=128&width=128"
+                    src="/placeholder.svg?height=160&width=160"
                     alt="Unilife"
-                    width={128}
-                    height={128}
+                    width={160}
+                    height={160}
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold">Unilife</h3>
-                <p className="mt-2 max-w-md text-muted-foreground">
+                <h3 className="mt-6 text-2xl font-bold">Unilife</h3>
+                <p className="mt-4 max-w-md text-lg text-muted-foreground">
                   Finland's largest student event organization, bringing professional event management to the
                   tournament.
                 </p>
@@ -396,53 +429,52 @@ export default function BeerPongBattleRoyale() {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="bg-slate-50 py-16 md:py-24">
-          <div className="container">
+        <section id="faq" className="bg-slate-50 py-20 md:py-28">
+          <div className="container mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-[800px] text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Frequently Asked Questions</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-6 text-lg text-muted-foreground">
                 Everything you need to know about the Beer Pong Battle Royale.
               </p>
             </div>
 
-            <div className="mt-12 mx-auto max-w-[800px]">
+            <div className="mt-16 mx-auto max-w-[800px] bg-white p-8 rounded-lg shadow-sm">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>Who can participate?</AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionTrigger className="text-lg font-medium">Who can participate?</AccordionTrigger>
+                  <AccordionContent className="text-base">
                     The tournament is open to everyone 18 years and older. You don't need to be a student to
                     participate.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>Do I need to bring my own equipment?</AccordionTrigger>
-                  <AccordionContent>
-                    No, all equipment will be provided, including cups, balls, and tables. Just bring your A-game!
+                  <AccordionTrigger className="text-lg font-medium">Do I need to bring my own equipment?</AccordionTrigger>
+                  <AccordionContent className="text-base">
+                    No, all equipment will be provided, including cups, balls, and tables. Just bring your A-game! (Note! Drinks are not included. BYOB)
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>What's the refund policy?</AccordionTrigger>
-                  <AccordionContent>
-                    Full refunds are available up to 2 weeks before the event. After that, you can transfer your
-                    registration to another team but no refunds will be issued.
+                  <AccordionTrigger className="text-lg font-medium">What's the refund policy?</AccordionTrigger>
+                  <AccordionContent className="text-base">
+                    You can transfer your registration to another team but no refunds will be issued. Team name can be changed up to 1 week before the tournament date.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>Is there food available at the event?</AccordionTrigger>
-                  <AccordionContent>
-                    Yes, there will be food vendors on site offering a variety of options throughout the day.
+                  <AccordionTrigger className="text-lg font-medium">Is there food available at the event?</AccordionTrigger>
+                  <AccordionContent className="text-base">
+                    No food will be provided by the event organizers. However, there are a couple of fast food restaurants and student cafeterias nearby. Please note that student cafeteria opening hours may vary, especially since the event takes place on a Saturday.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>Can we bring our own beverages?</AccordionTrigger>
-                  <AccordionContent>
-                    No outside beverages are allowed. Drinks will be available for purchase at the venue.
+                  <AccordionTrigger className="text-lg font-medium">Can we bring our own beverages?</AccordionTrigger>
+                  <AccordionContent className="text-base">
+                    Yes.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
-                  <AccordionTrigger>Is there parking available?</AccordionTrigger>
-                  <AccordionContent>
-                    Limited parking is available at the venue. We recommend using public transportation or carpooling.
+                  <AccordionTrigger className="text-lg font-medium">Is there parking available?</AccordionTrigger>
+                  <AccordionContent className="text-base">
+                    Limited parking is available <i>nearby</i>. We recommend using public transportation.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -451,13 +483,13 @@ export default function BeerPongBattleRoyale() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-red-600 py-16 md:py-24 text-white">
-          <div className="container text-center">
+        <section className="bg-red-600 py-20 md:py-24 text-white">
+          <div className="container mx-auto max-w-6xl px-4 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Ready to Become a Champion?</h2>
-            <p className="mt-4 mx-auto max-w-[600px] text-lg text-red-100">
+            <p className="mt-6 mx-auto max-w-[600px] text-lg text-red-100">
               Don't miss your chance to compete in Finland's biggest beer pong tournament and win amazing prizes!
             </p>
-            <Button asChild size="lg" className="mt-8 bg-white text-red-600 hover:bg-red-100">
+            <Button asChild size="lg" className="mt-10 bg-white text-red-600 hover:bg-red-100 text-lg px-8 py-6">
               <Link href="#registration">Register Your Team Now</Link>
             </Button>
           </div>
@@ -465,21 +497,21 @@ export default function BeerPongBattleRoyale() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t bg-slate-900 text-white py-12">
-        <div className="container">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <footer className="border-t bg-slate-900 text-white py-16">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <div className="flex items-center gap-2 font-bold text-xl">
                 <span className="text-red-500">BEER PONG</span>
                 <span className="bg-red-500 text-white px-2 py-1 rounded-md">BATTLE ROYALE</span>
               </div>
-              <p className="mt-4 text-slate-300">
+              <p className="mt-6 text-slate-300">
                 Finland's biggest beer pong tournament, bringing together the best players for an epic competition.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
+              <h3 className="text-lg font-bold mb-6">Quick Links</h3>
+              <ul className="space-y-3">
                 <li>
                   <Link href="#about" className="text-slate-300 hover:text-white">
                     About
@@ -503,21 +535,21 @@ export default function BeerPongBattleRoyale() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Contact</h3>
-              <ul className="space-y-2">
+              <h3 className="text-lg font-bold mb-6">Contact</h3>
+              <ul className="space-y-3">
                 <li className="text-slate-300">Email: info@beerpongbattleroyale.fi</li>
                 <li className="text-slate-300">Phone: +358 123 456 789</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Follow Us</h3>
-              <div className="flex gap-4">
+              <h3 className="text-lg font-bold mb-6">Follow Us</h3>
+              <div className="flex gap-6">
                 <Link href="#" className="text-slate-300 hover:text-white">
                   <span className="sr-only">Facebook</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="28"
+                    height="28"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -533,8 +565,8 @@ export default function BeerPongBattleRoyale() {
                   <span className="sr-only">Instagram</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="28"
+                    height="28"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -552,8 +584,8 @@ export default function BeerPongBattleRoyale() {
                   <span className="sr-only">Twitter</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="28"
+                    height="28"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -568,9 +600,9 @@ export default function BeerPongBattleRoyale() {
               </div>
             </div>
           </div>
-          <div className="mt-8 border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
+          <div className="mt-12 border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
             <p>© {new Date().getFullYear()} Beer Pong Battle Royale. All rights reserved.</p>
-            <p className="mt-2">Organized by Aalto Beer Pong and Unilife. Drink responsibly.</p>
+            <p className="mt-3">Organized by Aalto Beer Pong and Unilife. Drink responsibly.</p>
           </div>
         </div>
       </footer>
