@@ -27,14 +27,14 @@ export const HeroSection = () => {
             <p className="mx-auto max-w-[700px] text-lg md:text-xl">
               128 teams. One champion. Massive cash prizes.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
+            <div className="grid grid-cols-2 sm:grid-cols-4 justify-items-center justify-center gap-6 text-sm">
               <div className="flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
                 <span>Coming Soon</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
-                <span>Helsinki, Finland</span>
+                <span>Espoo, Finland</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5" />

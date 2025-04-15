@@ -1,19 +1,16 @@
-import { Header } from "./components/Header"
-import { HeroSection } from "./components/HeroSection"
-import { AboutSection } from "./components/AboutSection"
-import { PrizesSection } from "./components/PrizesSection"
-import { TournamentSection } from "./components/TournamentSection"
-import { RegistrationSection } from "./components/RegistrationSection"
-import { OrganizersSection } from "./components/OrganizersSection"
-import { FAQSection } from "./components/FAQSection"
-import { CTASection } from "./components/CTASection"
-import { Footer } from "./components/Footer"
+import { HeroSection } from "./_components/HeroSection"
+import { AboutSection } from "./_components/AboutSection"
+import { PrizesSection } from "./_components/PrizesSection"
+import { TournamentSection } from "./_components/TournamentSection"
+import { RegistrationSection } from "./_components/RegistrationSection"
+import { OrganizersSection } from "./_components/OrganizersSection"
+import { FAQSection } from "./_components/FAQSection"
+import { CTASection } from "./_components/CTASection"
+import PartnerSection from "./_components/PartnerSection"
 
 export default function BeerPongBattleRoyale() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
-
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
@@ -22,10 +19,9 @@ export default function BeerPongBattleRoyale() {
         <RegistrationSection />
         <OrganizersSection />
         <FAQSection />
+        <PartnerSection />
         <CTASection />
       </main>
-
-      <Footer />
     </div>
   )
 }

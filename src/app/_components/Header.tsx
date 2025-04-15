@@ -48,32 +48,32 @@ export const Header = () => {
 
   return (
     <header 
-      className={`sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-transform duration-300 ${!isVisible ? '-translate-y-full' : ''}`}
+      className={`sticky top-0 z-50 w-full bg-background shadow-lg transition-transform duration-300 ${!isVisible ? '-translate-y-full' : ''}`}
     >
-      <div className="container mx-auto max-w-6xl px-4 flex h-16 items-center justify-between">
+      <div className="container mx-auto max-w-6xl px-4 gap-2 flex h-16 items-center justify-between">
         <div className="flex items-center gap-2 font-bold text-xl">
           <span className="text-red-600">BEER PONG</span>
           <span className="bg-red-600 text-white px-2 py-1 rounded-md">BATTLE ROYALE</span>
         </div>
         <nav className="hidden md:flex gap-6">
-          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="/#about" className="text-sm font-medium hover:underline underline-offset-4">
             About
           </Link>
-          <Link href="#tournament" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="/#tournament" className="text-sm font-medium hover:underline underline-offset-4">
             Tournament
           </Link>
-          <Link href="#prizes" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="/#prizes" className="text-sm font-medium hover:underline underline-offset-4">
             Prizes
           </Link>
-          <Link href="#registration" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="/#registration" className="text-sm font-medium hover:underline underline-offset-4">
             Registration
           </Link>
-          <Link href="#faq" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="/#faq" className="text-sm font-medium hover:underline underline-offset-4">
             FAQ
           </Link>
         </nav>
         <Button asChild size="sm" className="bg-red-600 hover:bg-red-700">
-          <Link href="#registration">Register Now</Link>
+          <Link href="/#registration">Register Now</Link>
         </Button>
       </div>
     </header>
