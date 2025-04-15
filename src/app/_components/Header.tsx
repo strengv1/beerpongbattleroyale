@@ -50,7 +50,7 @@ export const Header = () => {
     <header 
       className={`sticky top-0 z-50 w-full bg-background shadow-lg transition-transform duration-300 ${!isVisible ? '-translate-y-full' : ''}`}
     >
-      <div className="container mx-auto max-w-6xl px-4 gap-2 flex h-16 items-center justify-between">
+      <div className="container mx-auto max-w-6xl px-4 gap-2 flex h-20 md:h-16 items-center justify-between">
         <div className="flex items-center gap-2 font-bold text-xl">
           <span className="text-red-600">BEER PONG</span>
           <span className="bg-red-600 text-white px-2 py-1 rounded-md">BATTLE ROYALE</span>
