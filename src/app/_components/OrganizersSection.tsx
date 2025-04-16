@@ -8,15 +8,16 @@ export const OrganizersSection = () => {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Organized By</h2>
         </div>
 
-        <div className="mt-16 grid gap-12 md:grid-cols-2">
+        <div className="mt-16 grid gap-12 lg:grid-cols-2 items-end">
           <div className="flex flex-col items-center text-center">
-            <div className="h-40 w-40 overflow-hidden rounded-full bg-slate-100 shadow-md">
+          <div className="relative h-24 max-w-xs w-full">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="/unilife_logo.png"
                 alt="Unilife"
-                width={160}
-                height={160}
-                className="h-full w-full object-cover"
+                width={312}
+                height={96}
+                className="h-auto w-auto max-h-24 object-contain"
+                style={{ maxWidth: '100%' }}
               />
             </div>
             <h3 className="mt-6 text-2xl font-bold">UNI LIFE</h3>
