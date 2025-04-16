@@ -212,7 +212,7 @@ export default function PartnerSection() {
         
         <div className="mt-16 text-center">
           <p className="text-sm text-muted-foreground">
-            Interested in partnering our event?{" "}
+            Interested in sponsoring our event?{" "}
             <a href="/contact" className="text-primary hover:underline font-medium">
               Contact us
             </a>
