@@ -113,6 +113,7 @@ export const Footer = () => {
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
           <p>© {new Date().getFullYear()} Beer Pong Battle Royale. All rights reserved.</p>
           <p className="mt-3">Organized by Aalto Beer Pong and Unilife. Drink responsibly.</p>
+          <p className="mt-3">Website by: Pion Blanc Oy.</p>
         </div>
       </div>
     </footer>
