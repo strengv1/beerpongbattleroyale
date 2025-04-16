@@ -29,14 +29,9 @@ export default function PartnerSection() {
       website: "https://aaltobeerpong.fi"
     },
     {
-      name: "Red Bull",
-      imageSrc: "/redbull_logo.png",
-      website: "https://redbull.com"
-    },
-    {
-      name: "Aalto Beer Pong",
-      imageSrc: "/abp_logo.png",
-      website: "https://aaltobeerpong.fi"
+      name: "UNI LIFE",
+      imageSrc: "/unilife_logo.png",
+      website: ""
     },
     {
       name: "Red Bull",
@@ -49,6 +44,11 @@ export default function PartnerSection() {
       website: "https://aaltobeerpong.fi"
     },
     {
+      name: "UNI LIFE",
+      imageSrc: "/unilife_logo.png",
+      website: ""
+    },
+    {
       name: "Red Bull",
       imageSrc: "/redbull_logo.png",
       website: "https://redbull.com"
@@ -59,9 +59,9 @@ export default function PartnerSection() {
       website: "https://aaltobeerpong.fi"
     },
     {
-      name: "Red Bull",
-      imageSrc: "/redbull_logo.png",
-      website: "https://redbull.com"
+      name: "UNI LIFE",
+      imageSrc: "/unilife_logo.png",
+      website: ""
     },
   ];
 
@@ -98,7 +98,7 @@ export default function PartnerSection() {
         const next = current >= maxIndex ? 0 : current + 1;
         return next;
       });
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [isPaused, partners.length, visibleCount]);

@@ -15,7 +15,10 @@ export const HeroSection = () => {
           className="object-cover opacity-70"
           priority
         />
-        <div className="container mx-auto max-w-6xl px-4 relative z-20 flex h-full flex-col items-center justify-center text-center text-white">
+        <div className="container h-full max-w-6xl mx-auto relative z-20 flex flex-col 
+          items-center justify-center text-center text-white
+          px-4 pt-10
+        ">
           <div className="space-y-6">
             <div className="inline-block rounded-md bg-red-600 px-3 py-1 text-sm font-semibold">
               FINLAND'S BIGGEST BEER PONG TOURNAMENT
@@ -45,7 +48,7 @@ export const HeroSection = () => {
                 <span>Cash Prizes</span>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6 mt-10 mx-10">
               <Button asChild size="lg" className="bg-red-600 hover:bg-red-700">
                 <Link href="#registration">Register Your Team</Link>
               </Button>

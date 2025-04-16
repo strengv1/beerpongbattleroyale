@@ -1,8 +1,9 @@
+import { Mail, Phone } from "lucide-react"
 import Link from "next/link"
 
 export const Footer = () => {
   return (
-    <footer className="border-t bg-slate-900 text-white py-16">
+    <footer className="mt-10 bg-slate-900 text-white py-16">
       <div className="container mx-auto max-w-6xl px-4">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -42,8 +43,12 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-6">Contact</h3>
             <ul className="space-y-3">
-              <li className="text-slate-300">Email: ville.strengell@pionblanc.fi</li>
-              <li className="text-slate-300">Phone: +358 50 494 5684</li>
+              <li className="text-slate-300 ">
+                <Mail className="inline" height={20} /> kasperkallio3@gmail.com</li>
+              <li className="text-slate-300">
+                <Mail className="inline" height={20} /> ville.strengell@pionblanc.fi</li>
+              <li className="text-slate-300">
+                <Phone className="inline" height={20} /> +358 50 494 5684</li>
             </ul>
           </div>
           <div>

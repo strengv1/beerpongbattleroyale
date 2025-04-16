@@ -45,6 +45,12 @@ export const FAQSection = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
+              <AccordionTrigger className="text-lg font-medium">Is drinking mandatory for players?</AccordionTrigger>
+              <AccordionContent className="text-base">
+                No. You do not have to drink to participate.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
               <AccordionTrigger className="text-lg font-medium">Is there parking available?</AccordionTrigger>
               <AccordionContent className="text-base">
                 Limited parking is available <i>nearby</i>. We recommend using public transportation.
